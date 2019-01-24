@@ -75,6 +75,6 @@ class BaseMailTemplate(object):
             return MailResponse(False, 'The mail_options parameter includes \'SMTPUTF8\' but the SMTPUTF8 extension is not supported by the server.')
         except Exception as err:
             return MailResponse(False, str(err))
-        finally:
-            self.server.quit()
-    
+            
+    def __del__(self):
+        self.server.quit()

@@ -12,7 +12,7 @@ from setuptools import setup, find_packages            #这个包没有的可以
 
 setup(
     name = "smtp-mail",      #这里是pip项目发布的名称
-    version = "0.0.1",  #版本号，数值大的会优先被pip
+    version = "0.0.2",  #版本号，数值大的会优先被pip
     keywords = ("smtp", "mail", "html"),
     description = "html",
     long_description = "smtp协议的邮件发送，支持html格式，可以设置邮件模板",
